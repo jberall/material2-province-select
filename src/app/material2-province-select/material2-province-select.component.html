@@ -1,0 +1,8 @@
+
+<mat-form-field>
+  <mat-select [(ngModel)]="selectValue" placeholder="{{placeholder}}" class="{{class}}">
+      <mat-option *ngFor="let val of provinces" [value]="val.code">
+          {{val.province}}
+      </mat-option>
+  </mat-select>
+</mat-form-field>
